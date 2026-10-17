@@ -1,0 +1,285 @@
+<style>
+:root {
+    
+    --bg-color: #f8fef9;
+    --text-color: #2d3b2d;
+    --primary-green: #4CAF50;
+    --accent-pink: #E91E63;
+    --card-bg: #ffffff;
+    --light-green: #e8f5e9;
+    --light-pink: #fce4ec;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+}
+header {
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary-green), var(--accent-pink));
+    color: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid var(--accent-pink);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+.card-header {
+    background-color: var(--light-green);
+    padding: 15px 20px;
+    border-bottom: 1px solid #d4ebd0;
+}
+.card-header h2 {
+    color: var(--primary-green);
+    font-size: 1.4rem;
+}
+.photo-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--light-pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-pink);
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-body {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.info-item strong {
+    color: var(--primary-green);
+}
+.badge {
+    display: inline-block;
+    background-color: var(--light-pink);
+    color: var(--accent-pink);
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+}
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
+</style>
+
+<header>
+    <h1>Herbário Virtual de PANCs</h1>
+    <p>Documento de Apoio e Campo — Identificação e Histórico Taxonômico</p>
+</header>
+<div class="container">
+    <!-- 1. Ora-pro-nóbis -->
+    <div class="card">
+        <div class="card-header">
+            <h2>1. Ora-pro-nóbis</h2>
+        </div>
+        <div class="photo-container">
+            <img src="imagem/ora.jpg" alt="Ora-pro-nóbis">
+        </div>
+        <div class="card-body info-item">
+            <div><strong>Nome Científico / Taxonomia:</strong> Pereskia aculeata, pertencente à família Cactaceae (família dos cactos).</div>
+            <div><strong>História Ecológica:</strong> Planta trepadeira, com ramos longos e espinhos, que cresce em ambientes tropicais. Suas flores atraem insetos polinizadores, e seus frutos servem de alimento para animais, contribuindo para a dispersão das sementes. É resistente e pode crescer em diferentes tipos de solo e condições ambientais.</div>
+            <div><strong>Origem:</strong> <span class="badge">Nativa</span> da América Tropical, incluindo o Brasil, onde ocorre naturalmente em diferentes regiões.</div>
+            <div><strong>Usos Tradicionais:</strong> Suas folhas são utilizadas na alimentação, principalmente em saladas, refogados, sopas e farinhas, por serem nutritivas e ricas em proteínas, fibras, vitaminas e minerais. Também é utilizada na medicina popular e como planta ornamental e cerca-viva.</div>
+            <div><strong>Fonte de Pesquisa:</strong> Horto Didático da UFSC</div>
+        </div>
+    </div>
+
+    <!-- 2. Bertalha -->
+    <div class="card">
+        <div class="card-header">
+            <h2>2. Bertalha</h2>
+        </div>
+        <div class="photo-container">
+            <img src="imagem/bertalha.jpg" alt="Bertalha">
+        </div>
+        <div class="card-body">
+            <div><strong>Nome Científico / Taxonomia:</strong> Basella alba, pertencente à família Basellaceae.</div>
+            <div><strong>História Ecológica:</strong> Planta trepadeira de crescimento rápido, com folhas verdes, grossas e suculentas. Desenvolve-se principalmente em regiões de clima tropical e subtropical, preferindo ambientes quentes e úmidos. Suas flores originam frutos pequenos, que contribuem para a reprodução da planta por meio de sementes.</div>
+            <div><strong>Origem:</strong> <span class="badge">Exótica</span> no Brasil, originária de regiões tropicais da Ásia, especialmente da Índia e do Sudeste Asiático.</div>
+            <div><strong>Usos Tradicionais:</strong> Suas folhas e talos são consumidos cozidos ou refogados, em sopas, saladas e outros pratos. É utilizada na alimentação por seu valor nutricional, pois contém vitaminas, minerais e fibras. Também pode ser cultivada como planta ornamental.</div>
+            <div><strong>Fonte de Pesquisa:</strong> Embrapa — Bertalha</div>
+        </div>
+    </div>
+
+    <!-- 3. Dente-de-leão -->
+    <div class="card">
+        <div class="card-header">
+            <h2>3. Dente-de-leão</h2>
+        </div>
+        <div class="photo-container">
+            <img src="imagem/dente.jpg" alt="Dente-de-leão">
+        </div>
+        <div class="card-body">
+            <div><strong>Nome Científico / Taxonomia:</strong> Taraxacum officinale, pertencente à família Asteraceae.</div>
+            <div><strong>História Ecológica:</strong> Planta herbácea perene, com flores amarelas e folhas com bordas serrilhadas. Sementes possuem estruturas semelhantes a pequenos paraquedas, que permitem sua dispersão pelo vento. Cresce em jardins, gramados, pastagens e terrenos abertos, adaptando-se a diferentes condições ambientais.</div>
+            <div><strong>Origem:</strong> <span class="badge">Exótica</span> no Brasil, originária da Europa e da Ásia. Adaptada ao Sul e Sudeste.</div>
+            <div><strong>Usos Tradicionais:</strong> Suas folhas são consumidas cruas em saladas ou refogadas, enquanto as flores e raízes também podem ser utilizadas na alimentação. Tradicionalmente empregada no preparo de chás e na medicina popular (digestão e ação diurética).</div>
+            <div><strong>Fonte de Pesquisa:</strong> Horto Didático da UFSC.</div>
+        </div>
+    </div>
+
+    <!-- 4. Malvavisco -->
+    <div class="card">
+        <div class="card-header">
+            <h2>4. Malvavisco</h2>
+        </div>
+        <div class="photo-container">
+            <img src="imagem/malvavisco.jpg" alt="Malvavisco">
+        </div>
+        <div class="card-body">
+            <div><strong>Nome Científico / Taxonomia:</strong> Malvaviscus arboreus, pertencente à família Malvaceae.</div>
+            <div><strong>História Ecológica:</strong> Arbusto de folhas verdes e flores vermelhas ou rosadas que permanecem parcialmente fechadas. Suas flores atraem beija-flores, contribuindo para a polinização. É cultivado em jardins e pode formar cercas-vivas.</div>
+            <div><strong>Origem:</strong> <span class="badge">Exótica</span> no Brasil, originária do México e de outras regiões da América Central e norte da América do Sul.</div>
+            <div><strong>Usos Tradicionais:</strong> Utilizada principalmente como planta ornamental e cerca-viva. Folhas jovens podem ser consumidas cozidas, e as flores na alimentação e como corante natural.</div>
+            <div><strong>Fonte de Pesquisa:</strong> Programa Agricultura Urbana e Meio Ambiente / Horto Didático da UFSC</div>
+        </div>
+    </div>
+
+    <!-- 5. Lírio-do-brejo -->
+    <div class="card">
+        <div class="card-header">
+            <h2>5. Lírio-do-brejo</h2>
+        </div>
+        <div class="photo-container">
+            <img src="imagem/lirio.jpg" alt="Lírio-do-brejo">
+        </div>
+        <div class="card-body">
+            <div><strong>Nome Científico / Taxonomia:</strong> Hedychium coronarium, pertencente à família Zingiberaceae.</div>
+            <div><strong>História Ecológica:</strong> Planta herbácea perene, com folhas verdes alongadas e flores brancas perfumadas. Desenvolve-se em ambientes úmidos, como brejos e margens de rios. Propagação por sementes e rizomas, podendo competir com plantas nativas.</div>
+            <div><strong>Origem:</strong> <span class="badge">Exótica Invasora</span> originária da Ásia tropical, introduzida para fins ornamentais.</div>
+            <div><strong>Usos Tradicionais:</strong> Utilizada na ornamentação de jardins devido às suas flores perfumadas. Apresenta usos na medicina popular, produção de papel e alimentação.</div>
+            <div><strong>Fonte de Pesquisa:</strong> ESALQ/USP e IAT Paraná</div>
+        </div>
+    </div>
+
+    <!-- 6. Maria-pretinha -->
+    <div class="card">
+        <div class="card-header">
+            <h2>6. Maria-pretinha</h2>
+        </div>
+        <div class="photo-container">
+            <img src="imagem/maria.jpg" alt="Maria-pretinha">
+        </div>
+        <div class="card-body">
+            <div><strong>Nome Científico / Taxonomia:</strong> Solanum americanum, pertencente à família Solanaceae.</div>
+            <div><strong>História Ecológica:</strong> Planta herbácea que cresce espontaneamente em terrenos, hortas e áreas abertas. Seus frutos servem de alimento para animais, ajudando na dispersão das sementes.</div>
+            <div><strong>Origem:</strong> <span class="badge">Nativa</span> das Américas, com ocorrência natural no Brasil.</div>
+            <div><strong>Usos Tradicionais:</strong> Conhecida como PANC. Folhas consumidas cozidas e frutos utilizados na alimentação (desde que corretamente identificados e consumidos com segurança).</div>
+            <div><strong>Fonte de Pesquisa:</strong> PANC do Cerrado</div>
+        </div>
+    </div>
+
+    <!-- 7. Capim-limão -->
+    <div class="card">
+        <div class="card-header">
+            <h2>7. Capim-limão</h2>
+        </div>
+        <div class="photo-container">
+            <img src="imagem/capim.jpg" alt="Capim-limão">
+        </div>
+        <div class="card-body">
+            <div><strong>Nome Científico / Taxonomia:</strong> Cymbopogon citratus, pertencente à família Poaceae.</div>
+            <div><strong>História Ecológica:</strong> Planta herbácea aromática que forma touceiras de folhas longas e verdes, com cheiro de limão. Desenvolve-se bem em regiões quentes e ensolaradas.</div>
+            <div><strong>Origem:</strong> <span class="badge">Exótica</span> no Brasil, originária de regiões tropicais da Ásia.</div>
+            <div><strong>Usos Tradicionais:</strong> Utilizado principalmente no preparo de chás e bebidas, associado ao relaxamento e alívio digestivo. Usado também como aromatizante em receitas.</div>
+            <div><strong>Fonte de Pesquisa:</strong> PANC do Cerrado</div>
+        </div>
+    </div>
+
+    <!-- 8. Bananeira -->
+    <div class="card">
+        <div class="card-header">
+            <h2>8. Bananeira</h2>
+        </div>
+        <div class="photo-container">
+            <img src="imagem/bananeira.jpg" alt="Bananeira">
+        </div>
+        <div class="card-body">
+            <div><strong>Nome Científico / Taxonomia:</strong> Musa spp., pertencente à família Musaceae.</div>
+            <div><strong>História Ecológica:</strong> Planta herbácea de grande porte, cultivada em regiões tropicais. Frutos são importantes fontes de alimento e outras partes podem ser aproveitadas.</div>
+            <div><strong>Origem:</strong> <span class="badge">Exótica</span> no Brasil, originária do sudeste da Ásia.</div>
+            <div><strong>Usos Tradicionais:</strong> Frutos consumidos frescos ou cozidos. O coração da bananeira (mangará) é uma PANC rica e comestível pouco consumida. Folhas usadas para embrulhar alimentos.</div>
+            <div><strong>Fonte de Pesquisa:</strong> Ciência Hoje das Crianças (CHC) e Embrapa</div>
+        </div>
+    </div>
+
+    <!-- 9. Azedinha -->
+    <div class="card">
+        <div class="card-header">
+            <h2>9. Azedinha</h2>
+        </div>
+        <div class="photo-container">
+            <img src="imagem/azedinha.jpg" alt="Azedinha">
+        </div>
+        <div class="card-body">
+            <div><strong>Nome Científico / Taxonomia:</strong> Rumex acetosa, pertencente à família Polygonaceae.</div>
+            <div><strong>História Ecológica:</strong> Planta herbácea com folhas verdes e sabor ácido característico. Desenvolve-se em locais de clima ameno e solos úmidos, cultivada em hortas e jardins.</div>
+            <div><strong>Origem:</strong> <span class="badge">Exótica</span> no Brasil, originária da Europa e da Ásia.</div>
+            <div><strong>Usos Tradicionais:</strong> Considerada uma PANC. Suas folhas são usadas em saladas, sopas e molhos, trazendo um toque levemente azedo.</div>
+            <div><strong>Fonte de Pesquisa:</strong> Sustentarea — USP</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Trabalho Escolar de Botânica — Herbário Virtual de PANCs</p>
+</footer>
