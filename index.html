@@ -1,6 +1,11 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Herbário Virtual de PANCs</title>
 <style>
 :root {
-    
     --bg-color: #f8fef9;
     --text-color: #2d3b2d;
     --primary-green: #4CAF50;
@@ -9,7 +14,6 @@
     --light-green: #e8f5e9;
     --light-pink: #fce4ec;
 }
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -106,6 +110,16 @@ header p {
     font-weight: bold;
     margin-top: 5px;
 }
+.dados-coleta {
+    background-color: var(--light-green);
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+.dados-coleta p {
+    margin: 3px 0;
+    font-size: 0.92rem;
+}
 footer {
     text-align: center;
     margin-top: 50px;
@@ -120,12 +134,15 @@ footer {
     }
 }
 </style>
+</head>
+<body>
 
 <header>
     <h1>Herbário Virtual de PANCs</h1>
     <p>Documento de Apoio e Campo — Identificação e Histórico Taxonômico</p>
 </header>
 <div class="container">
+
     <!-- 1. Ora-pro-nóbis -->
     <div class="card">
         <div class="card-header">
@@ -134,7 +151,14 @@ footer {
         <div class="photo-container">
             <img src="imagem/ora.jpg" alt="Ora-pro-nóbis">
         </div>
-        <div class="card-body info-item">
+        <div class="card-body">
+            <div class="dados-coleta">
+                <p><strong>Data da Coleta:</strong> 10/2/26</p>
+                <p><strong>Local da Coleta:</strong> Pontal do Sul - Casa da Bruna</p>
+                <p><strong>Porte:</strong> Liana / Trepadeira</p>
+                <p><strong>Características Marcantes:</strong> Espinhos / Acúleos</p>
+                <p><strong>Dimensões:</strong> Altura: 15cm - 30cm / Comprimento folha: 2cm - 5cm</p>
+            </div>
             <div><strong>Nome Científico / Taxonomia:</strong> Pereskia aculeata, pertencente à família Cactaceae (família dos cactos).</div>
             <div><strong>História Ecológica:</strong> Planta trepadeira, com ramos longos e espinhos, que cresce em ambientes tropicais. Suas flores atraem insetos polinizadores, e seus frutos servem de alimento para animais, contribuindo para a dispersão das sementes. É resistente e pode crescer em diferentes tipos de solo e condições ambientais.</div>
             <div><strong>Origem:</strong> <span class="badge">Nativa</span> da América Tropical, incluindo o Brasil, onde ocorre naturalmente em diferentes regiões.</div>
@@ -152,6 +176,13 @@ footer {
             <img src="imagem/bertalha.jpg" alt="Bertalha">
         </div>
         <div class="card-body">
+            <div class="dados-coleta">
+                <p><strong>Data da Coleta:</strong> 10/2/26</p>
+                <p><strong>Local da Coleta:</strong> Pontal do Sul - Casa da Bruna</p>
+                <p><strong>Porte:</strong> Liana / Trepadeira</p>
+                <p><strong>Características Marcantes:</strong> Presença de Seiva/Mucilagem</p>
+                <p><strong>Dimensões:</strong> Altura: 20cm - 40cm / Comprimento folha: 4cm - 7cm</p>
+            </div>
             <div><strong>Nome Científico / Taxonomia:</strong> Basella alba, pertencente à família Basellaceae.</div>
             <div><strong>História Ecológica:</strong> Planta trepadeira de crescimento rápido, com folhas verdes, grossas e suculentas. Desenvolve-se principalmente em regiões de clima tropical e subtropical, preferindo ambientes quentes e úmidos. Suas flores originam frutos pequenos, que contribuem para a reprodução da planta por meio de sementes.</div>
             <div><strong>Origem:</strong> <span class="badge">Exótica</span> no Brasil, originária de regiões tropicais da Ásia, especialmente da Índia e do Sudeste Asiático.</div>
@@ -169,6 +200,13 @@ footer {
             <img src="imagem/dente.jpg" alt="Dente-de-leão">
         </div>
         <div class="card-body">
+            <div class="dados-coleta">
+                <p><strong>Data da Coleta:</strong> 10/3/26</p>
+                <p><strong>Local da Coleta:</strong> Calçadão de Matinhos</p>
+                <p><strong>Porte:</strong> Erva</p>
+                <p><strong>Características Marcantes:</strong> Presença de Látex</p>
+                <p><strong>Dimensões:</strong> Altura: 12-15cm / Comprimento folha: 8-15cm</p>
+            </div>
             <div><strong>Nome Científico / Taxonomia:</strong> Taraxacum officinale, pertencente à família Asteraceae.</div>
             <div><strong>História Ecológica:</strong> Planta herbácea perene, com flores amarelas e folhas com bordas serrilhadas. Sementes possuem estruturas semelhantes a pequenos paraquedas, que permitem sua dispersão pelo vento. Cresce em jardins, gramados, pastagens e terrenos abertos, adaptando-se a diferentes condições ambientais.</div>
             <div><strong>Origem:</strong> <span class="badge">Exótica</span> no Brasil, originária da Europa e da Ásia. Adaptada ao Sul e Sudeste.</div>
@@ -186,6 +224,13 @@ footer {
             <img src="imagem/malvavisco.jpg" alt="Malvavisco">
         </div>
         <div class="card-body">
+            <div class="dados-coleta">
+                <p><strong>Data da Coleta:</strong> 10/8/26</p>
+                <p><strong>Local da Coleta:</strong> Matinhos - Casa da Tia da Lyz</p>
+                <p><strong>Porte:</strong> Arbusto</p>
+                <p><strong>Características Marcantes:</strong> Nenhum especial</p>
+                <p><strong>Dimensões:</strong> Altura: 2m - 4m (Flor: 4cm - 6cm) / Comprimento folha: 6cm - 12cm</p>
+            </div>
             <div><strong>Nome Científico / Taxonomia:</strong> Malvaviscus arboreus, pertencente à família Malvaceae.</div>
             <div><strong>História Ecológica:</strong> Arbusto de folhas verdes e flores vermelhas ou rosadas que permanecem parcialmente fechadas. Suas flores atraem beija-flores, contribuindo para a polinização. É cultivado em jardins e pode formar cercas-vivas.</div>
             <div><strong>Origem:</strong> <span class="badge">Exótica</span> no Brasil, originária do México e de outras regiões da América Central e norte da América do Sul.</div>
@@ -203,6 +248,13 @@ footer {
             <img src="imagem/lirio.jpg" alt="Lírio-do-brejo">
         </div>
         <div class="card-body">
+            <div class="dados-coleta">
+                <p><strong>Data da Coleta:</strong> 10/9/26</p>
+                <p><strong>Local da Coleta:</strong> IFPR - Campus Paranaguá</p>
+                <p><strong>Porte:</strong> Erva</p>
+                <p><strong>Características Marcantes:</strong> Odor característico</p>
+                <p><strong>Dimensões:</strong> Altura: 1m - 2m</p>
+            </div>
             <div><strong>Nome Científico / Taxonomia:</strong> Hedychium coronarium, pertencente à família Zingiberaceae.</div>
             <div><strong>História Ecológica:</strong> Planta herbácea perene, com folhas verdes alongadas e flores brancas perfumadas. Desenvolve-se em ambientes úmidos, como brejos e margens de rios. Propagação por sementes e rizomas, podendo competir com plantas nativas.</div>
             <div><strong>Origem:</strong> <span class="badge">Exótica Invasora</span> originária da Ásia tropical, introduzida para fins ornamentais.</div>
@@ -220,6 +272,13 @@ footer {
             <img src="imagem/maria.jpg" alt="Maria-pretinha">
         </div>
         <div class="card-body">
+            <div class="dados-coleta">
+                <p><strong>Data da Coleta:</strong> 10/9/26</p>
+                <p><strong>Local da Coleta:</strong> IFPR - Campus Paranaguá</p>
+                <p><strong>Porte:</strong> Erva</p>
+                <p><strong>Características Marcantes:</strong> Nenhum especial</p>
+                <p><strong>Dimensões:</strong> Altura: 40cm - 90cm</p>
+            </div>
             <div><strong>Nome Científico / Taxonomia:</strong> Solanum americanum, pertencente à família Solanaceae.</div>
             <div><strong>História Ecológica:</strong> Planta herbácea que cresce espontaneamente em terrenos, hortas e áreas abertas. Seus frutos servem de alimento para animais, ajudando na dispersão das sementes.</div>
             <div><strong>Origem:</strong> <span class="badge">Nativa</span> das Américas, com ocorrência natural no Brasil.</div>
@@ -237,6 +296,13 @@ footer {
             <img src="imagem/capim.jpg" alt="Capim-limão">
         </div>
         <div class="card-body">
+            <div class="dados-coleta">
+                <p><strong>Data da Coleta:</strong> 10/9/26</p>
+                <p><strong>Local da Coleta:</strong> IFPR - Campus Paranaguá</p>
+                <p><strong>Porte:</strong> Erva</p>
+                <p><strong>Características Marcantes:</strong> Odor característico</p>
+                <p><strong>Dimensões:</strong> Altura: até 120cm</p>
+            </div>
             <div><strong>Nome Científico / Taxonomia:</strong> Cymbopogon citratus, pertencente à família Poaceae.</div>
             <div><strong>História Ecológica:</strong> Planta herbácea aromática que forma touceiras de folhas longas e verdes, com cheiro de limão. Desenvolve-se bem em regiões quentes e ensolaradas.</div>
             <div><strong>Origem:</strong> <span class="badge">Exótica</span> no Brasil, originária de regiões tropicais da Ásia.</div>
@@ -254,6 +320,13 @@ footer {
             <img src="imagem/bananeira.jpg" alt="Bananeira">
         </div>
         <div class="card-body">
+            <div class="dados-coleta">
+                <p><strong>Data da Coleta:</strong> 10/9/26</p>
+                <p><strong>Local da Coleta:</strong> IFPR - Campus Paranaguá</p>
+                <p><strong>Porte:</strong> Erva</p>
+                <p><strong>Características Marcantes:</strong> Presença de Seiva/Mucilagem</p>
+                <p><strong>Dimensões:</strong> Altura: 3m - 7m</p>
+            </div>
             <div><strong>Nome Científico / Taxonomia:</strong> Musa spp., pertencente à família Musaceae.</div>
             <div><strong>História Ecológica:</strong> Planta herbácea de grande porte, cultivada em regiões tropicais. Frutos são importantes fontes de alimento e outras partes podem ser aproveitadas.</div>
             <div><strong>Origem:</strong> <span class="badge">Exótica</span> no Brasil, originária do sudeste da Ásia.</div>
@@ -271,6 +344,13 @@ footer {
             <img src="imagem/azedinha.jpg" alt="Azedinha">
         </div>
         <div class="card-body">
+            <div class="dados-coleta">
+                <p><strong>Data da Coleta:</strong> 10/9/26</p>
+                <p><strong>Local da Coleta:</strong> IFPR - Campus Paranaguá</p>
+                <p><strong>Porte:</strong> Erva</p>
+                <p><strong>Características Marcantes:</strong> Nenhum especial</p>
+                <p><strong>Dimensões:</strong> Altura: até 5cm</p>
+            </div>
             <div><strong>Nome Científico / Taxonomia:</strong> Rumex acetosa, pertencente à família Polygonaceae.</div>
             <div><strong>História Ecológica:</strong> Planta herbácea com folhas verdes e sabor ácido característico. Desenvolve-se em locais de clima ameno e solos úmidos, cultivada em hortas e jardins.</div>
             <div><strong>Origem:</strong> <span class="badge">Exótica</span> no Brasil, originária da Europa e da Ásia.</div>
@@ -278,8 +358,12 @@ footer {
             <div><strong>Fonte de Pesquisa:</strong> Sustentarea — USP</div>
         </div>
     </div>
+
 </div>
 
 <footer>
     <p>Trabalho Escolar de Botânica — Herbário Virtual de PANCs</p>
 </footer>
+
+</body>
+</html>
